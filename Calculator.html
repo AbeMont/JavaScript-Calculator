@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<style>
+    button {
+        padding: 10px;
+        flex: 1;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .calculator-wrapper {
+        width: 50%;
+        margin: 50px auto;
+    }
+
+    .data-output {
+        width: 250px;
+        margin: 25px auto;
+        text-align: center;
+    }
+
+    .data-output label {
+        float: left;
+        clear: both;
+    }
+</style>
+<body>
+<div class="calculator-wrapper">
+    <div class="row">
+        <button></button>
+        <button data-input="(">(</button>
+        <button data-input=")">)</button>
+        <button data-input="-"> - </button>
+    </div>
+
+    <div class="row">
+        <button data-input="1">1</button>
+        <button data-input="2">2</button>
+        <button data-input="3">3</button>
+        <button data-input="+"> + </button>
+    </div>
+
+    <div class="row">
+        <button data-input="4">4</button>
+        <button data-input="5">5</button>
+        <button data-input="6">6</button>
+        <button data-input="/"> / </button>
+    </div>
+
+    <div class="row">
+        <button data-input="7">7</button>
+        <button data-input="8">8</button>
+        <button data-input="9">9</button>
+        <button data-input="*"> * </button>
+    </div>
+
+    <div class="row">
+        <button data-input="."> . </button>
+        <button data-input="0"> 0 </button>
+        <button data-input="c"> c </button>
+        <button data-input="=" id="equal"> = </button>
+    </div>
+</div>
+
+<div class="data-output">
+    <label for="output">Current values: </label><h3 id="output"></h3>
+    <label for="calculated"> Calculated Result:  </label> <h3 id="calculated">0</h3>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
